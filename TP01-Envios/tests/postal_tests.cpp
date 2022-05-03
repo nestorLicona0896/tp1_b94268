@@ -4,9 +4,26 @@
 namespace
 {
 
+    TEST(Postal_Test, Test_CalculoCosto)
+    {
+        // AAA
+
+        // Arrange - configurar el escenario de pruebas unitarias
+        float distancia = 600;
+        float peso = 1;
+        int clase = 2;
+        Postal envioP(peso, distancia, clase);
+
+        // Act - ejecutar la secuencia de instrucciones(operacion)
+        int actual = envioP.CalculoCosto();
+        int esperado = 16.8;
+
+        // Assert - validacion de los resultados obtenidos con los esperados
+        EXPECT_EQ(esperado, actual);
+    }
+
     TEST(Postal_Test, Test_CalculoCostoPostalClase3)
     {
-
         // AAA
 
         // Arrange - configurar el escenario de pruebas unitarias
@@ -16,7 +33,7 @@ namespace
         Postal envioP(peso, distancia, clase);
 
         // Act - ejecutar la secuencia de instrucciones(operacion)
-        int actual = envioP.CalculoCosto();
+        int actual = envioP.CalculoCostoClase3();
         int esperado = 0.12;
 
         // Assert - validacion de los resultados obtenidos con los esperados
@@ -25,7 +42,6 @@ namespace
 
     TEST(Postal_Test, Test_CalculoCostoPostalClase1)
     {
-
         // AAA
 
         // Arrange - configurar el escenario de pruebas unitarias
@@ -35,7 +51,7 @@ namespace
         Postal envioP(peso, distancia, clase);
 
         // Act - ejecutar la secuencia de instrucciones(operacion)
-        int actual = envioP.CalculoCosto();
+        int actual = envioP.CalculoCostoClase1();
         int esperado = 3.6;
 
         // Assert - validacion de los resultados obtenidos con los esperados
@@ -44,7 +60,6 @@ namespace
 
     TEST(Postal_Test, Test_CalculoCostoPostalClase2)
     {
-
         // AAA
 
         // Arrange - configurar el escenario de pruebas unitarias
@@ -54,7 +69,7 @@ namespace
         Postal envioP(peso, distancia, clase);
 
         // Act - ejecutar la secuencia de instrucciones(operacion)
-        int actual = envioP.CalculoCosto();
+        int actual = envioP.CalculoCostoClase2();
         int esperado = 0.3;
 
         // Assert - validacion de los resultados obtenidos con los esperados

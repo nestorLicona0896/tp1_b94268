@@ -4,7 +4,6 @@
 namespace {
 
     TEST (Fedex_Test, Test_CalculoCostoFedex) {
-
         //AAA
 
         // Arrange - configurar el escenario de pruebas unitarias
@@ -17,8 +16,7 @@ namespace {
         int esperado = 35;
 
         // Assert - validacion de los resultados obtenidos con los esperados 
-        EXPECT_EQ(esperado, actual);
-    
+        EXPECT_EQ(esperado, actual);    
     }
 
 }
