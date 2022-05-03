@@ -62,6 +62,6 @@ float Postal::CalculoCostoClase2(){
 
 float Postal::CalculoCostoClase3(){
     float costo = 0;
-    costo += this->peso * 0.0120; 
+    costo += this->distancia * 0.0120; 
     return costo;
 } 

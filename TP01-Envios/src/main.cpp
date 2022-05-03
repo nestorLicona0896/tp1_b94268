@@ -8,13 +8,13 @@
 using namespace std;
 
 int main() {
-    
-    Postal *envioPostal1 = new Postal(10,6,1);
-    Postal *envioPostal2 = new Postal(5,10,2);
+
+    Postal *envioPostal1 = new Postal(5,10,3);
+    Postal *envioPostal2 = new Postal(10,6,1);   
     Postal *envioPostal3 = new Postal(16,4,3);
 
-    Fedex *envioFedex1 = new Fedex(6,6);
-    Fedex *envioFedex2 = new Fedex(15,10);
+    Fedex *envioFedex1 = new Fedex(5,10);
+    Fedex *envioFedex2 = new Fedex(6,6);    
     Fedex *envioFedex3 = new Fedex(1,600);
 
     vector<Envio*> vectorEnvios;
